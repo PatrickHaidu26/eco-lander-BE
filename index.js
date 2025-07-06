@@ -22,7 +22,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.use(cors({
   credentials: true,
-  origin: process.env.FRONTEND_URL || 'https://localhost:3000'
+  origin: ["https://eco-lander.ro","https://eco-smart.ro"],
 }));
 app.use(cookieParser());
 
